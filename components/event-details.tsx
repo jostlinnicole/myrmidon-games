@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import { CalendarDays, Gamepad2, MapPin, Users } from 'lucide-react'
 
 const details = [
@@ -13,6 +14,17 @@ export function EventDetails() {
       <h2 id="details-heading" className="sr-only">
         Event details
       </h2>
+      <figure className="mb-8 overflow-hidden rounded-lg border">
+        <Image
+          src="/images/myrmidon-storefront.jpeg"
+          alt="The Myrmidon Games storefront, with gaming tables and shelves visible through the front windows"
+          width={612}
+          height={436}
+          sizes="(min-width: 768px) 720px, 100vw"
+          className="h-auto w-full"
+          priority
+        />
+      </figure>
       <dl className="grid gap-px overflow-hidden rounded-lg border bg-border sm:grid-cols-2">
         {details.map(({ icon: Icon, label, value }) => (
           <div key={label} className="flex items-start gap-4 bg-background p-6">
