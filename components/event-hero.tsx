@@ -5,7 +5,7 @@ export function EventHero() {
         <p className="text-sm font-medium uppercase tracking-widest opacity-90">
           Myrmidon Games
         </p>
-        <h1 className="mt-4 text-balance text-6xl font-bold tracking-tight md:text-8xl">
+        <h1 className="mt-4 text-balance text-6xl font-bold tracking-tight underline decoration-4 underline-offset-8 md:text-8xl md:decoration-8 md:underline-offset-[12px]">
           Game Day
         </h1>
         <p className="mt-6 text-lg md:text-xl">
